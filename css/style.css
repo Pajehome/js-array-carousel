@@ -1,0 +1,71 @@
+// Button settings
+$btn-size:                100px;
+$btn-arrowsize:           $btn-size / 4;
+
+// Button colors
+$btn-color:               hotpink;
+$btn-bg:                  #111;
+$btn-border:              hotpink;
+
+// Button hover colors
+$btn-hover-color:         #111;
+$btn-bg-hover:            white;
+$btn-hover-border-color:  white;
+
+body {
+  background: #111;
+}
+
+.arrowbtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border: 2px solid blue;
+  border-radius: 100px;
+  color: aqua; 
+  cursor: pointer;
+  left: 50%;
+  line-height: 100px;
+  margin-left: 50px;
+  transition: all 0.25s ease-in-out;
+  z-index: 100;
+}
+.arrowbtn:hover {
+    background: white;
+    border-color: blue;
+    color: #111;
+}
+.arrowbtn:after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+}
+
+
+.arrowbtn-up {
+  top: 20px;
+}
+  .arrowbtn-up:after {
+    margin-left: -5px;
+    margin-top: -2px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    transform: rotateZ(45deg);
+  }
+
+
+.arrowbtn-down {
+  bottom: 20px;
+}
+  .arrowbtn-down:after {
+    margin-left: -5px;
+    margin-top: -5px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotateZ(45deg);
+  }
