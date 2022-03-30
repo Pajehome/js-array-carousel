@@ -1,21 +1,14 @@
-// Button settings
-$btn-size:                100px;
-$btn-arrowsize:           $btn-size / 4;
 
-// Button colors
-$btn-color:               hotpink;
-$btn-bg:                  #111;
-$btn-border:              hotpink;
 
-// Button hover colors
-$btn-hover-color:         #111;
-$btn-bg-hover:            white;
-$btn-hover-border-color:  white;
 
-body {
-  background: #111;
+.container{
+  position: relative!important;
+    margin: 0 auto;
+    width: 50%;
+    top: 175px;
+    background: #111;
+    box-sizing: border-box;
 }
-
 .arrowbtn {
   position: absolute;
   width: 30px;

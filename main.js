@@ -11,7 +11,7 @@ let imgIndex = 1;
 function nextImg() {
  myImage.setAttribute('src', imgArr[imgIndex]);
  imgIndex++;
-    if (imgIndex > 4) {
+    if (imgIndex >= imgArr.length) {
         imgIndex = 0;
     }
 }
@@ -19,7 +19,7 @@ function nextImg() {
 function prevImg() {
  myImage.setAttribute('src', imgArr[imgIndex]);
  imgIndex--;
-    if (imgIndex < 4)  {
-        imgIndex = 0 ;
+    if (imgIndex < 0)  {
+        imgIndex = imgArr.length -1 ;
     }
 }
