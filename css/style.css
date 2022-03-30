@@ -1,47 +1,59 @@
 
-
-
 .container{
   position: relative!important;
     margin: 0 auto;
     width: 50%;
+    height: 300px;
     top: 175px;
     background: #111;
     box-sizing: border-box;
+
+}
+#mainImg{
+  max-height: 300px;
+}
+.rightImg img{
+  height: 60px;
+ 
+}
+.rightImg img.active{
+  border: 1px solid gray;
+  filter:opacity(.5);
+  cursor: pointer;
 }
 .arrowbtn {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  background: gray;
-  border: 2px solid blue;
+  width: 25px;
+  height: 25px;
+  background: rgb(0, 0,0,0.5);
+  border: 2px solid rgb(189, 189, 189);
   border-radius: 100px;
-  color: aqua; 
+  color: rgb(190, 190, 190); 
   cursor: pointer;
-  left: 50%;
+  right: 6%;
   line-height: 100px;
   margin-left: 50px;
   transition: all 0.25s ease-in-out;
   z-index: 100;
 }
 .arrowbtn:hover {
-    background: white;
-    border-color: blue;
-    color: #111;
+    background: rgb(0,0,0,0.7);
+    border-color: rgb(92, 92, 92);
+    color: rgb(138, 138, 138);
 }
 .arrowbtn:after {
     position: absolute;
     display: inline-block;
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     top: 50%;
-    left: 50%;
+    left: 54%;
 }
 
 
 .arrowbtn-up {
-  top: 20px;
+  top: 5px;
 }
   .arrowbtn-up:after {
     margin-left: -5px;
@@ -53,7 +65,7 @@
 
 
 .arrowbtn-down {
-  bottom: 20px;
+  bottom: 5px;
 }
   .arrowbtn-down:after {
     margin-left: -5px;

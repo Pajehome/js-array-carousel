@@ -10,14 +10,19 @@
 </head>
 <body>
     <div class="container position-relative g-0">
-        <div class="row g-0">
-          <div class="leftImg  col-10">
-             <img  id="mainImg" class="w-100" src="img/01.jpg" alt="">
-          </div>
-          <span class="arrowbtn arrowbtn-up" onclick="nextImg()"></span>
-          <span class="arrowbtn arrowbtn-down" onclick="prevImg()"></span>
-          <div class="rightImg col-2">
-            <img src="img/01.jpg" class="w-100" alt="">
+        <div class="row h-100 g-0">
+          <div class="leftImg  col-10 h-100">
+             <img  id="mainImg" class="w-100 h-100" src="img/01.jpg" alt="">
+
+          </div>    
+          <div class="rightImg col-2 h-100">
+            <span class="arrowbtn arrowbtn-up" onclick="nextImg()"></span>
+            <span class="arrowbtn arrowbtn-down" onclick="prevImg()"></span>
+            <img src="img/01.jpg" class="vid w-100 active" alt="">
+            <img src="img/02.jpg" class="vid w-100 active" alt="">
+            <img src="img/03.jpg" class="vid w-100 active" alt="">
+            <img src="img/04.jpg" class="vid w-100 active" alt="">
+            <img src="img/05.jpg" class="vid w-100 active" onclick="openImg()" alt="">
           </div>
         </div>  
     </div>
